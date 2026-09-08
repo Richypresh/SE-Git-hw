@@ -74,11 +74,9 @@ and that fixed it. That was probably the part of this assignment that confused m
 
 |---|---|---|---|---|
 
-| #1 | me | \*\[fill in what you actually did]\* | \*\[fill in how you fixed it]\* | Closed |
+| #1 | me | Confirm hello\_world.py runs correctly | Ran `python hello\_world.py` in the terminal and confirmed it printed "Hello, World!" as expected | Closed |
 
 | #2 | classmate | Review apple.py | Confirmed the script runs correctly | Closed |
-
-
 
 \## Author
 
