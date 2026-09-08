@@ -74,9 +74,11 @@ and that fixed it. That was probably the part of this assignment that confused m
 
 |---|---|---|---|---|
 
-| #1 | me | Confirm hello\_world.py runs correctly | Ran `python hello\_world.py` in the terminal and confirmed it printed "Hello, World!" as expected | Closed |
+| #2 | me | Review the Hello World program and verify that the program runs correctly and follows the assignment requirements. | Ran `python hello\_world.py`, confirmed it printed "Hello, World!" as required, and confirmed the code matched the assignment requirements | Closed |
 
-| #2 | classmate | Review apple.py | Confirmed the script runs correctly | Closed |
+| #3 | classmate | Review apple.py and verify that the program prints the required message and is properly committed to the feature branch. | Confirmed apple.py prints "I eat apple" and that it was committed to the feature-1 branch | Closed |
+
+
 
 \## Author
 
