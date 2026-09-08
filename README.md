@@ -2,15 +2,7 @@
 
 
 
-A homework project demonstrating core Git and GitHub workflows: repositories, commits, branching, pull requests, merge conflict resolution, and issue tracking.
-
-
-
-\## Project Description
-
-
-
-This repository was built for a Software Engineering assignment covering the full Git/GitHub collaboration workflow. It contains two small Python programs and a documented history of branches, pull requests, a resolved merge conflict, and tracked issues.
+This is my repo for the Git/GitHub homework assignment. Honestly, going in I barely knew what to do, so this was mostly me learning as I went. It covers making a repo, branching, pull requests, fixing a merge conflict on purpose, and using issues.
 
 
 
@@ -18,11 +10,11 @@ This repository was built for a Software Engineering assignment covering the ful
 
 
 
-\- `hello\_world.py` — prints `Hello, World!`
+\- `hello\_world.py` - prints `Hello, World!`
 
-\- `apple.py` — prints `I eat apple` (added on the `feature-1` branch)
+\- `apple.py` - prints `I eat apple`, added on a separate branch called `feature-1`
 
-\- `README.md` — this file
+\- `README.md` - this file
 
 
 
@@ -40,31 +32,23 @@ python apple.py
 
 
 
-\## Workflow Summary
+\## What I Did
 
 
 
-\- \*\*Branches:\*\* `main` (stable) and `feature-1` (added `apple.py`, merged via pull request).
-
-\- \*\*Pull Request:\*\* `feature-1` → `main`, reviewed and merged. See the closed/merged PR in the \*\*Pull requests\*\* tab.
-
-\- \*\*Merge Conflict:\*\* Simulated and resolved — see the "How I Resolved the Merge Conflict" section below.
-
-\- \*\*Issues:\*\* Two issues were opened, assigned, worked on, and closed — see the "Issues \& Resolutions" section below.
+I made the repo, cloned it to my computer, and pushed my first commit with `hello\_world.py`. Then I made a new branch called `feature-1`, added `apple.py` on it, and pushed that branch separately. After that, I opened a pull request to merge `feature-1` into `main` and merged it once it was reviewed.
 
 
 
-\## How I Resolved the Merge Conflict
+\## The Merge Conflict (this part took me a while)
 
 
 
-<!-- Replace this with your own details from Part 5. -->
+I had to intentionally create a merge conflict to see how to fix one. I changed the same line in `hello\_world.py` on two different branches, and when I tried to merge them Git stopped me with:
 
+At first I honestly didn't know what I was looking at - the file had these weird lines in it:
 
-
-While updating `hello\_world.py` on two different branches, both branches changed the same line of code in different ways. Running `git merge` produced a conflict:
-
-I opened the file, found the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`), compared both versions, and manually edited the line to keep the version I wanted. I removed the conflict markers, saved the file, then ran:
+Once I understood that everything between `<<<<<<<` and `=======` was one version and everything between `=======` and `>>>>>>>` was the other version, it made a lot more sense. I picked the line I wanted to keep, deleted all three marker lines, saved the file, then ran:
 
 
 
@@ -78,7 +62,7 @@ git commit -m "Resolve merge conflict in hello\_world.py"
 
 
 
-This completed the merge with no further errors.
+and that fixed it. That was probably the part of this assignment that confused me the most, but once I actually saw a real conflict and worked through it, it clicked.
 
 
 
@@ -90,9 +74,9 @@ This completed the merge with no further errors.
 
 |---|---|---|---|---|
 
-| #1 | (you) | \*\[describe your issue]\* | \*\[what you did to fix it]\* | Closed |
+| #1 | me | \*\[fill in what you actually did]\* | \*\[fill in how you fixed it]\* | Closed |
 
-| #2 | (classmate) | Review apple.py | Confirmed the script runs correctly | Closed |
+| #2 | classmate | Review apple.py | Confirmed the script runs correctly | Closed |
 
 
 
